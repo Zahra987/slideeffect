@@ -5,7 +5,7 @@ const [count , setCount ]= useState(0);
 const [x , setX] =useState(1)
 useEffect( ()=>{
   document.title= `You clicked ${count} times `
-}  )
+},[count])
   return (
     <>
     <p> you clicked <spam> {count} </spam> times! </p>
